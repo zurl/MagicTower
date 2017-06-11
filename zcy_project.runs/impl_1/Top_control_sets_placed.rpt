@@ -1,0 +1,365 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Thu Jan 12 13:00:04 2017
+| Host         : cpu06 running 64-bit CentOS Linux release 7.2.1511 (Core)
+| Command      : report_control_sets -verbose -file Top_control_sets_placed.rpt
+| Design       : Top
+| Device       : xc7k160t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   296 |
+| Unused register locations in slices containing registers |  1121 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            1299 |          630 |
+| No           | No                    | Yes                    |              74 |           22 |
+| No           | Yes                   | No                     |             106 |           45 |
+| Yes          | No                    | No                     |             202 |           87 |
+| Yes          | No                    | Yes                    |              16 |            3 |
+| Yes          | Yes                   | No                     |            1102 |          663 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------------+--------------------------------+------------------------------+------------------+----------------+
+|     Clock Signal     |          Enable Signal         |       Set/Reset Signal       | Slice Load Count | Bel Load Count |
++----------------------+--------------------------------+------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG       |                                | p_0_out[5]                   |                1 |              1 |
+|  clk_IBUF_BUFG       | map[22][3]_i_2_n_0             | map[22][3]_i_1_n_0           |                2 |              4 |
+|  clk_IBUF_BUFG       | map[243][3]_i_2_n_0            | map[243][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[244][3]_i_2_n_0            | map[244][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[245][3]_i_2_n_0            | map[245][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[246][3]_i_2_n_0            | map[246][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[247][3]_i_2_n_0            | map[247][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[248][3]_i_2_n_0            | map[248][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[249][3]_i_2_n_0            | map[249][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[241][3]_i_2_n_0            | map[241][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[230][3]_i_2_n_0            | map[230][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[231][3]_i_2_n_0            | map[231][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[232][3]_i_2_n_0            | map[232][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[233][3]_i_2_n_0            | map[233][3]_i_1_n_0          |                4 |              4 |
+|  clk_IBUF_BUFG       | map[234][3]_i_2_n_0            | map[234][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[235][3]_i_2_n_0            | map[235][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[236][3]_i_2_n_0            | map[236][3]_i_1_n_0          |                1 |              4 |
+|  clk_IBUF_BUFG       | map[237][3]_i_2_n_0            | map[237][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[255][3]_i_2_n_0            | map[255][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[35][3]_i_2_n_0             | map[35][3]_i_1_n_0           |                2 |              4 |
+|  clk_IBUF_BUFG       | map[36][3]_i_2_n_0             | map[36][3]_i_1_n_0           |                2 |              4 |
+|  clk_IBUF_BUFG       | map[24][3]_i_2_n_0             | map[24][3]_i_1_n_0           |                2 |              4 |
+|  clk_IBUF_BUFG       | map[250][3]_i_2_n_0            | map[250][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[251][3]_i_2_n_0            | map[251][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[252][3]_i_2_n_0            | map[252][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[253][3]_i_2_n_0            | map[253][3]_i_1_n_0          |                1 |              4 |
+|  clk_IBUF_BUFG       | map[254][3]_i_2_n_0            | map[254][3]_i_1_n_0          |                1 |              4 |
+|  clk_IBUF_BUFG       | map[242][3]_i_2_n_0            | map[242][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[25][3]_i_2_n_0             | map[25][3]_i_1_n_0           |                3 |              4 |
+|  clk_IBUF_BUFG       | map[26][3]_i_2_n_0             | map[26][3]_i_1_n_0           |                3 |              4 |
+|  clk_IBUF_BUFG       | map[27][3]_i_2_n_0             | map[27][3]_i_1_n_0           |                2 |              4 |
+|  clk_IBUF_BUFG       | map[28][3]_i_2_n_0             | map[28][3]_i_1_n_0           |                2 |              4 |
+|  clk_IBUF_BUFG       | map[23][3]_i_2_n_0             | map[23][3]_i_1_n_0           |                3 |              4 |
+|  clk_IBUF_BUFG       | map[240][3]_i_2_n_0            | map[240][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[239][3]_i_2_n_0            | map[239][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[205][3]_i_2_n_0            | map[205][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[216][3]_i_2_n_0            | map[216][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[217][3]_i_2_n_0            | map[217][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[218][3]_i_2_n_0            | map[218][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[219][3]_i_2_n_0            | map[219][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[201][3]_i_2_n_0            | map4_out__1[3]               |                2 |              4 |
+|  clk_IBUF_BUFG       | map[202][3]_i_2_n_0            | map[202][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[203][3]_i_2_n_0            | map[203][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[204][3]_i_2_n_0            | map[204][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[215][3]_i_2_n_0            | map[215][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[206][3]_i_2_n_0            | map[206][3]_i_1_n_0          |                4 |              4 |
+|  clk_IBUF_BUFG       | map[207][3]_i_2_n_0            | map[207][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[208][3]_i_2_n_0            | map[208][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[209][3]_i_2_n_0            | map[209][3]_i_1_n_0          |                4 |              4 |
+|  clk_IBUF_BUFG       | map[20][3]_i_2_n_0             | map[20][3]_i_1_n_0           |                3 |              4 |
+|  clk_IBUF_BUFG       | map[210][3]_i_2_n_0            | map[210][3]_i_1_n_0          |                4 |              4 |
+|  clk_IBUF_BUFG       | map[192][3]_i_2_n_0            | map[192][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[226][3]_i_2_n_0            | map[226][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[34][3]_i_2_n_0             | map[34][3]_i_1_n_0           |                2 |              4 |
+|  clk_IBUF_BUFG       | map[21][3]_i_2_n_0             | map[21][3]_i_1_n_0           |                2 |              4 |
+|  clk_IBUF_BUFG       | map[220][3]_i_2_n_0            | map[220][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[221][3]_i_2_n_0            | map[221][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[222][3]_i_2_n_0            | map[222][3]_i_1_n_0          |                4 |              4 |
+|  clk_IBUF_BUFG       | map[223][3]_i_2_n_0            | map[223][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[224][3]_i_2_n_0            | map[224][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[225][3]_i_2_n_0            | map[225][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[238][3]_i_2_n_0            | map[238][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[227][3]_i_2_n_0            | map[227][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[228][3]_i_2_n_0            | map[228][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[229][3]_i_2_n_0            | map[229][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[211][3]_i_2_n_0            | map[211][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[212][3]_i_2_n_0            | map[212][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[213][3]_i_2_n_0            | map[213][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[214][3]_i_2_n_0            | map[214][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[65][3]_i_2_n_0             | map[65][3]_i_1_n_0           |                2 |              4 |
+|  clk_IBUF_BUFG       | map[76][3]_i_2_n_0             | map[76][3]_i_1_n_0           |                2 |              4 |
+|  clk_IBUF_BUFG       | map[77][3]_i_2_n_0             | map[77][3]_i_1_n_0           |                2 |              4 |
+|  clk_IBUF_BUFG       | map[78][3]_i_2_n_0             | map[78][3]_i_1_n_0           |                2 |              4 |
+|  clk_IBUF_BUFG       | map[79][3]_i_2_n_0             | map[79][3]_i_1_n_0           |                2 |              4 |
+|  clk_IBUF_BUFG       | map[7][3]_i_2_n_0              | map[7][3]_i_1_n_0            |                4 |              4 |
+|  clk_IBUF_BUFG       | map[62][3]_i_2_n_0             | map[62][3]_i_1_n_0           |                1 |              4 |
+|  clk_IBUF_BUFG       | map[63][3]_i_2_n_0             | map[63][3]_i_1_n_0           |                4 |              4 |
+|  clk_IBUF_BUFG       | map[64][3]_i_2_n_0             | map[64][3]_i_1_n_0           |                1 |              4 |
+|  clk_IBUF_BUFG       | map[75][3]_i_2_n_0             | map[75][3]_i_1_n_0           |                3 |              4 |
+|  clk_IBUF_BUFG       | map[66][3]_i_2_n_0             | map[66][3]_i_1_n_0           |                2 |              4 |
+|  clk_IBUF_BUFG       | map[67][3]_i_2_n_0             | map[67][3]_i_1_n_0           |                2 |              4 |
+|  clk_IBUF_BUFG       | map[68][3]_i_2_n_0             | map[68][3]_i_1_n_0           |                2 |              4 |
+|  clk_IBUF_BUFG       | map[69][3]_i_2_n_0             | map[69][3]_i_1_n_0           |                2 |              4 |
+|  clk_IBUF_BUFG       | map[6][3]_i_2_n_0              | map[6][3]_i_1_n_0            |                3 |              4 |
+|  clk_IBUF_BUFG       | map[70][3]_i_2_n_0             | map[70][3]_i_1_n_0           |                4 |              4 |
+|  clk_IBUF_BUFG       | map[54][3]_i_2_n_0             | map[54][3]_i_1_n_0           |                3 |              4 |
+|  clk_IBUF_BUFG       | map[87][3]_i_2_n_0             | map[87][3]_i_1_n_0           |                1 |              4 |
+|  clk_IBUF_BUFG       | map[98][3]_i_2_n_0             | map[98][3]_i_1_n_0           |                4 |              4 |
+|  clk_IBUF_BUFG       | map[80][3]_i_2_n_0             | map[80][3]_i_1_n_0           |                1 |              4 |
+|  clk_IBUF_BUFG       | map[81][3]_i_2_n_0             | map[81][3]_i_1_n_0           |                2 |              4 |
+|  clk_IBUF_BUFG       | map[82][3]_i_2_n_0             | map[82][3]_i_1_n_0           |                3 |              4 |
+|  clk_IBUF_BUFG       | map[83][3]_i_2_n_0             | map[83][3]_i_1_n_0           |                3 |              4 |
+|  clk_IBUF_BUFG       | map[84][3]_i_2_n_0             | map[84][3]_i_1_n_0           |                1 |              4 |
+|  clk_IBUF_BUFG       | map[85][3]_i_2_n_0             | map[85][3]_i_1_n_0           |                3 |              4 |
+|  clk_IBUF_BUFG       | map[86][3]_i_2_n_0             | map[86][3]_i_1_n_0           |                1 |              4 |
+|  clk_IBUF_BUFG       | map[55][3]_i_2_n_0             | map[55][3]_i_1_n_0           |                2 |              4 |
+|  clk_IBUF_BUFG       | map[88][3]_i_2_n_0             | map[88][3]_i_1_n_0           |                1 |              4 |
+|  clk_IBUF_BUFG       | map[89][3]_i_2_n_0             | map[89][3]_i_1_n_0           |                2 |              4 |
+|  clk_IBUF_BUFG       | map[8][3]_i_2_n_0              | map[8][3]_i_1_n_0            |                2 |              4 |
+|  clk_IBUF_BUFG       | map[71][3]_i_2_n_0             | map[71][3]_i_1_n_0           |                2 |              4 |
+|  clk_IBUF_BUFG       | map[72][3]_i_2_n_0             | map[72][3]_i_1_n_0           |                2 |              4 |
+|  clk_IBUF_BUFG       | map[73][3]_i_2_n_0             | map[73][3]_i_1_n_0           |                1 |              4 |
+|  clk_IBUF_BUFG       | map[74][3]_i_2_n_0             | map[74][3]_i_1_n_0           |                1 |              4 |
+|  clk_IBUF_BUFG       | map[43][3]_i_2_n_0             | map[43][3]_i_1_n_0           |                3 |              4 |
+|  clk_IBUF_BUFG       | map[53][3]_i_2_n_0             | map[53][3]_i_1_n_0           |                2 |              4 |
+|  clk_IBUF_BUFG       | map[37][3]_i_2_n_0             | map[37][3]_i_1_n_0           |                3 |              4 |
+|  clk_IBUF_BUFG       | map[38][3]_i_2_n_0             | map[38][3]_i_1_n_0           |                3 |              4 |
+|  clk_IBUF_BUFG       | map[39][3]_i_2_n_0             | map[39][3]_i_1_n_0           |                4 |              4 |
+|  clk_IBUF_BUFG       | map[3][3]_i_2_n_0              | map[3][3]_i_1_n_0            |                4 |              4 |
+|  clk_IBUF_BUFG       | map[40][3]_i_2_n_0             | map[40][3]_i_1_n_0           |                2 |              4 |
+|  clk_IBUF_BUFG       | map[41][3]_i_2_n_0             | map[41][3]_i_1_n_0           |                3 |              4 |
+|  clk_IBUF_BUFG       | map[42][3]_i_2_n_0             | map[42][3]_i_1_n_0           |                2 |              4 |
+|  clk_IBUF_BUFG       | map[52][3]_i_2_n_0             | map[52][3]_i_1_n_0           |                3 |              4 |
+|  clk_IBUF_BUFG       | map[44][3]_i_2_n_0             | map[44][3]_i_1_n_0           |                3 |              4 |
+|  clk_IBUF_BUFG       | map[29][3]_i_2_n_0             | map[29][3]_i_1_n_0           |                3 |              4 |
+|  clk_IBUF_BUFG       | map[2][3]_i_2_n_0              | map[2][3]_i_1_n_0            |                3 |              4 |
+|  clk_IBUF_BUFG       | map[30][3]_i_2_n_0             | map[30][3]_i_1_n_0           |                4 |              4 |
+|  clk_IBUF_BUFG       | map[31][3]_i_2_n_0             | map[31][3]_i_1_n_0           |                3 |              4 |
+|  clk_IBUF_BUFG       | map[32][3]_i_2_n_0             | map[32][3]_i_1_n_0           |                3 |              4 |
+|  clk_IBUF_BUFG       | map[33][3]_i_2_n_0             | map[33][3]_i_1_n_0           |                2 |              4 |
+|  clk_IBUF_BUFG       | map[193][3]_i_2_n_0            | map[193][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[51][3]_i_2_n_0             | map[51][3]_i_1_n_0           |                4 |              4 |
+|  clk_IBUF_BUFG       | map[50][3]_i_2_n_0             | map[50][3]_i_1_n_0           |                3 |              4 |
+|  clk_IBUF_BUFG       | map[4][3]_i_2_n_0              | map[4][3]_i_1_n_0            |                2 |              4 |
+|  clk_IBUF_BUFG       | map[49][3]_i_2_n_0             | map[49][3]_i_1_n_0           |                1 |              4 |
+|  clk_IBUF_BUFG       | map[48][3]_i_2_n_0             | map[48][3]_i_1_n_0           |                3 |              4 |
+|  clk_IBUF_BUFG       | map[47][3]_i_2_n_0             | map[47][3]_i_1_n_0           |                4 |              4 |
+|  clk_IBUF_BUFG       | map[46][3]_i_2_n_0             | map4_out__2[3]               |                3 |              4 |
+|  clk_IBUF_BUFG       | map[45][3]_i_2_n_0             | map[45][3]_i_1_n_0           |                4 |              4 |
+|  clk_IBUF_BUFG       | map[61][3]_i_2_n_0             | map[61][3]_i_1_n_0           |                2 |              4 |
+|  clk_IBUF_BUFG       | map[60][3]_i_2_n_0             | map[60][3]_i_1_n_0           |                4 |              4 |
+|  clk_IBUF_BUFG       | map[5][3]_i_2_n_0              | map[5][3]_i_1_n_0            |                1 |              4 |
+|  clk_IBUF_BUFG       | map[59][3]_i_2_n_0             | map[59][3]_i_1_n_0           |                2 |              4 |
+|  clk_IBUF_BUFG       | map[58][3]_i_2_n_0             | map[58][3]_i_1_n_0           |                2 |              4 |
+|  clk_IBUF_BUFG       | map[57][3]_i_2_n_0             | map[57][3]_i_1_n_0           |                3 |              4 |
+|  clk_IBUF_BUFG       | map[56][3]_i_2_n_0             | map[56][3]_i_1_n_0           |                1 |              4 |
+|  clk_IBUF_BUFG       | map[111][3]_i_2_n_0            | map[111][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[122][3]_i_2_n_0            | map[122][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[123][3]_i_2_n_0            | map[123][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[124][3]_i_2_n_0            | map4_out__0__0[3]            |                3 |              4 |
+|  clk_IBUF_BUFG       | map[125][3]_i_2_n_0            | map[125][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[126][3]_i_2_n_0            | map[126][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[127][3]_i_2_n_0            | map[127][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[128][3]_i_2_n_0            | map[128][3]_i_1_n_0          |                1 |              4 |
+|  clk_IBUF_BUFG       | map[110][3]_i_2_n_0            | map[110][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[121][3]_i_2_n_0            | map[121][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[112][3]_i_2_n_0            | map[112][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[113][3]_i_2_n_0            | map[113][3]_i_1_n_0          |                4 |              4 |
+|  clk_IBUF_BUFG       | map[114][3]_i_2_n_0            | map[114][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[115][3]_i_2_n_0            | map[115][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[116][3]_i_2_n_0            | map[116][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[117][3]_i_2_n_0            | map[117][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[118][3]_i_2_n_0            | map[118][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[119][3]_i_2_n_0            | map[119][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[120][3]_i_2_n_0            | map[120][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[137][3]_i_2_n_0            | map[137][3]_i_1_n_0          |                1 |              4 |
+|  clk_IBUF_BUFG       | map[136][3]_i_2_n_0            | map[136][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[135][3]_i_2_n_0            | map[135][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[134][3]_i_2_n_0            | map[134][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[133][3]_i_2_n_0            | map[133][3]_i_1_n_0          |                4 |              4 |
+|  clk_IBUF_BUFG       | map[132][3]_i_2_n_0            | map[132][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[131][3]_i_2_n_0            | map[131][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[130][3]_i_2_n_0            | map[130][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[12][3]_i_2_n_0             | map[12][3]_i_1_n_0           |                3 |              4 |
+|  clk_IBUF_BUFG       | map[129][3]_i_2_n_0            | map[129][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[146][3]_i_2_n_0            | map[146][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[145][3]_i_2_n_0            | map[145][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[143][3]_i_2_n_0            | map[143][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[142][3]_i_2_n_0            | map[142][3]_i_1_n_0          |                4 |              4 |
+|  clk_IBUF_BUFG       | map[102][3]_i_2_n_0            | map[102][3]_i_1_n_0          |                1 |              4 |
+|  clk_IBUF_BUFG       | status_key[1][3]_i_1_n_0       |                              |                2 |              4 |
+|  clk_IBUF_BUFG       | status_key[2][3]_i_1_n_0       |                              |                2 |              4 |
+|  clk_IBUF_BUFG       | status_key[0][3]_i_1_n_0       |                              |                2 |              4 |
+|  clk_IBUF_BUFG       | mem_addr[0]_i_1_n_0            |                              |                3 |              4 |
+|  clk_IBUF_BUFG       |                                | docker[70][4]_i_1_n_0        |                1 |              4 |
+|  clk_IBUF_BUFG       |                                | docker[55][2]_i_1_n_0        |                4 |              4 |
+|  clk_IBUF_BUFG       | mem_addr_real_i_1_n_0          |                              |                1 |              4 |
+|  clk_IBUF_BUFG       | map[99][3]_i_2_n_0             | map[99][3]_i_1_n_0           |                4 |              4 |
+|  clk_IBUF_BUFG       | kbd/cnt                        | kbd/cnt[3]_i_1_n_0           |                2 |              4 |
+|  clk_IBUF_BUFG       | map[9][3]_i_2_n_0              | map[9][3]_i_1_n_0            |                2 |              4 |
+|  clk_IBUF_BUFG       | map[90][3]_i_2_n_0             | map[90][3]_i_1_n_0           |                3 |              4 |
+|  clk_IBUF_BUFG       | map[91][3]_i_2_n_0             | map[91][3]_i_1_n_0           |                3 |              4 |
+|  clk_IBUF_BUFG       | map[92][3]_i_2_n_0             | map[92][3]_i_1_n_0           |                2 |              4 |
+|  clk_IBUF_BUFG       | map[93][3]_i_2_n_0             | map[93][3]_i_1_n_0           |                3 |              4 |
+|  clk_IBUF_BUFG       | map[94][3]_i_2_n_0             | map[94][3]_i_1_n_0           |                4 |              4 |
+|  clk_IBUF_BUFG       | map[144][3]_i_2_n_0            | map[144][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[101][3]_i_2_n_0            | map[101][3]_i_1_n_0          |                1 |              4 |
+|  clk_IBUF_BUFG       | map[100][3]_i_2_n_0            | map[100][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[0][3]_i_2_n_0              | map[0][3]_i_1_n_0            |                3 |              4 |
+|  clk_IBUF_BUFG       | map[95][3]_i_2_n_0             | map4_out__0[3]               |                2 |              4 |
+|  clk_IBUF_BUFG       | map[96][3]_i_2_n_0             | map[96][3]_i_1_n_0           |                3 |              4 |
+|  clk_IBUF_BUFG       | map[97][3]_i_2_n_0             | map[97][3]_i_1_n_0           |                3 |              4 |
+|  clk_IBUF_BUFG       | map[10][3]_i_2_n_0             | map[10][3]_i_1_n_0           |                4 |              4 |
+|  clk_IBUF_BUFG       | map[109][3]_i_2_n_0            | map[109][3]_i_1_n_0          |                1 |              4 |
+|  clk_IBUF_BUFG       | map[108][3]_i_2_n_0            | p_0_in__0[3]                 |                2 |              4 |
+|  clk_IBUF_BUFG       | map[107][3]_i_2_n_0            | map[107][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[106][3]_i_2_n_0            | map[106][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[105][3]_i_2_n_0            | map[105][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[104][3]_i_2_n_0            | map[104][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[103][3]_i_2_n_0            | map[103][3]_i_1_n_0          |                4 |              4 |
+|  clk_IBUF_BUFG       | map[11][3]_i_2_n_0             | map[11][3]_i_1_n_0           |                2 |              4 |
+|  clk_IBUF_BUFG       | map[177][3]_i_2_n_0            | map[177][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[189][3]_i_2_n_0            | map[189][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[18][3]_i_2_n_0             | map[18][3]_i_1_n_0           |                3 |              4 |
+|  clk_IBUF_BUFG       | map[190][3]_i_2_n_0            | map[190][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[191][3]_i_2_n_0            | map[191][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[173][3]_i_2_n_0            | map[173][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[174][3]_i_2_n_0            | map[174][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[175][3]_i_2_n_0            | map[175][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[176][3]_i_2_n_0            | map[176][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[188][3]_i_2_n_0            | map[188][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[178][3]_i_2_n_0            | map[178][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[179][3]_i_2_n_0            | map[179][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[17][3]_i_2_n_0             | map[17][3]_i_1_n_0           |                1 |              4 |
+|  clk_IBUF_BUFG       | map[180][3]_i_2_n_0            | map[180][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[181][3]_i_2_n_0            | map[181][3]_i_1_n_0          |                1 |              4 |
+|  clk_IBUF_BUFG       | map[141][3]_i_2_n_0            | map[141][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[164][3]_i_2_n_0            | map[164][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[163][3]_i_2_n_0            | map[163][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[187][3]_i_2_n_0            | map[187][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[186][3]_i_2_n_0            | map[186][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[185][3]_i_2_n_0            | map[185][3]_i_1_n_0          |                1 |              4 |
+|  clk_IBUF_BUFG       | map[184][3]_i_2_n_0            | map[184][3]_i_1_n_0          |                1 |              4 |
+|  clk_IBUF_BUFG       | map[183][3]_i_2_n_0            | map[183][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[182][3]_i_2_n_0            | map[182][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[200][3]_i_2_n_0            | map[200][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[1][3]_i_2_n_0              | map[1][3]_i_1_n_0            |                2 |              4 |
+|  clk_IBUF_BUFG       | map[19][3]_i_2_n_0             | map[19][3]_i_1_n_0           |                2 |              4 |
+|  clk_IBUF_BUFG       | map[199][3]_i_2_n_0            | map[199][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[198][3]_i_2_n_0            | map[198][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[197][3]_i_2_n_0            | map[197][3]_i_1_n_0          |                1 |              4 |
+|  clk_IBUF_BUFG       | map[196][3]_i_2_n_0            | map[196][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[195][3]_i_2_n_0            | map[195][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[194][3]_i_2_n_0            | map[194][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[147][3]_i_2_n_0            | map[147][3]_i_1_n_0          |                4 |              4 |
+|  clk_IBUF_BUFG       | map[140][3]_i_2_n_0            | map[140][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[13][3]_i_2_n_0             | map[13][3]_i_1_n_0           |                2 |              4 |
+|  clk_IBUF_BUFG       | map[139][3]_i_2_n_0            | map[139][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[138][3]_i_2_n_0            | map[138][3]_i_1_n_0          |                1 |              4 |
+|  clk_IBUF_BUFG       | map[154][3]_i_2_n_0            | map[154][3]_i_1_n_0          |                4 |              4 |
+|  clk_IBUF_BUFG       | map[153][3]_i_2_n_0            | map[153][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[152][3]_i_2_n_0            | map[152][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[151][3]_i_2_n_0            | map[151][3]_i_1_n_0          |                4 |              4 |
+|  clk_IBUF_BUFG       | map[150][3]_i_2_n_0            | map[150][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[14][3]_i_2_n_0             | map[14][3]_i_1_n_0           |                4 |              4 |
+|  clk_IBUF_BUFG       | map[149][3]_i_2_n_0            | map[149][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[148][3]_i_2_n_0            | map[148][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[165][3]_i_2_n_0            | map[165][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[162][3]_i_2_n_0            | map[162][3]_i_1_n_0          |                4 |              4 |
+|  clk_IBUF_BUFG       | map[161][3]_i_2_n_0            | map[161][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[160][3]_i_2_n_0            | map[160][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[166][3]_i_2_n_0            | map[166][3]_i_1_n_0          |                1 |              4 |
+|  clk_IBUF_BUFG       | map[167][3]_i_2_n_0            | map[167][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[168][3]_i_2_n_0            | map[168][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[169][3]_i_2_n_0            | map[169][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[16][3]_i_2_n_0             | map[16][3]_i_1_n_0           |                1 |              4 |
+|  clk_IBUF_BUFG       | map[170][3]_i_2_n_0            | map[170][3]_i_1_n_0          |                1 |              4 |
+|  clk_IBUF_BUFG       | map[171][3]_i_2_n_0            | map[171][3]_i_1_n_0          |                3 |              4 |
+|  clk_IBUF_BUFG       | map[172][3]_i_2_n_0            | map4_out__1__0[3]            |                3 |              4 |
+|  clk_IBUF_BUFG       | map[155][3]_i_2_n_0            | map[155][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[156][3]_i_2_n_0            | map[156][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[157][3]_i_2_n_0            | map[157][3]_i_1_n_0          |                2 |              4 |
+|  clk_IBUF_BUFG       | map[158][3]_i_2_n_0            | map4_out[3]                  |                2 |              4 |
+|  clk_IBUF_BUFG       | map[159][3]_i_2_n_0            | map[159][3]_i_1_n_0          |                4 |              4 |
+|  clk_IBUF_BUFG       | map[15][3]_i_2_n_0             | map[15][3]_i_1_n_0           |                2 |              4 |
+|  clk_IBUF_BUFG       |                                | status_on_money_reg_n_0      |                4 |              6 |
+|  clk_IBUF_BUFG       | docker[86][5]_i_1_n_0          |                              |                3 |              6 |
+|  clk_IBUF_BUFG       |                                | docker[55][1]_i_1_n_0        |                4 |              7 |
+|  clk_IBUF_BUFG       | mem_in[7]_i_1_n_0              |                              |                5 |              8 |
+| ~kbd/reading_reg_n_0 |                                |                              |                2 |              8 |
+|  clk_IBUF_BUFG       | input_old0                     |                              |                1 |              8 |
+|  clk_IBUF_BUFG       |                                | kbd/DOWNCOUNTER[7]_i_1_n_0   |                2 |              8 |
+|  clk_IBUF_BUFG       | docker[24][0]_i_1_n_0          |                              |                3 |              8 |
+|  clk_IBUF_BUFG       | docker[100][5]_i_2_n_0         | docker[100][5]_i_1_n_0       |                3 |              8 |
+|  clk_IBUF_BUFG       | input_on_real_saved[7]_i_2_n_0 | input_on_real_saved          |                2 |              8 |
+|  clk_IBUF_BUFG       | input_on                       | input_on0                    |                4 |              8 |
+|  clk_IBUF_BUFG       | docker[86][5]_i_1_n_0          | docker[86][2]_i_1_n_0        |                6 |              9 |
+|  clk25_BUFG          | vga_sync_ins/vs_enable_reg_n_0 |                              |                5 |             10 |
+|  clk_IBUF_BUFG       | kbd/data[10]_i_1_n_0           |                              |                6 |             10 |
+|  clk_IBUF_BUFG       | status_y                       |                              |                7 |             10 |
+|  clk_IBUF_BUFG       | kbd/TRIGGER                    | kbd/timing[0]_i_1_n_0        |                3 |             12 |
+|  clk25_BUFG          |                                | vga_sync_ins/vgaRed_reg[0]   |               12 |             12 |
+|  clk_IBUF_BUFG       | status_exp[0]_i_1_n_0          |                              |                3 |             12 |
+|  clk_IBUF_BUFG       | mem_addr[0]_i_2_n_0            | mem_addr[0]_i_1_n_0          |                5 |             13 |
+|  clk_IBUF_BUFG       | status_def                     |                              |                4 |             16 |
+|  cnt_reg[23]_i_2_n_0 | bze/Pitch_num                  | bze/m1/o_pwm_reg_0           |                3 |             16 |
+|  clk_IBUF_BUFG       | status_money[15]_i_1_n_0       |                              |                4 |             16 |
+|  clk_IBUF_BUFG       | status_hp[15]_i_1_n_0          |                              |                8 |             16 |
+|  clk_IBUF_BUFG       | status_atk                     |                              |                5 |             16 |
+|  clk_IBUF_BUFG       | enemy_hp[15]_i_2_n_0           | enemy_hp[15]_i_1_n_0         |                4 |             16 |
+|  clk_IBUF_BUFG       |                                | animation_buffer[31]_i_1_n_0 |                9 |             32 |
+|  clk_IBUF_BUFG       |                                | enemy_code_rep[5]_i_1_n_0    |                8 |             32 |
+|  clk_IBUF_BUFG       | enemy_code_rep[5]_i_1_n_0      |                              |               23 |             46 |
+|  clk25_BUFG          |                                |                              |               19 |             48 |
+|  cnt_reg[23]_i_2_n_0 |                                | bze/m1/o_pwm_reg_0           |               22 |             74 |
+|  clk_IBUF_BUFG       |                                |                              |              609 |           1243 |
++----------------------+--------------------------------+------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     1 |
+| 4      |                   264 |
+| 6      |                     2 |
+| 7      |                     1 |
+| 8      |                     8 |
+| 9      |                     1 |
+| 10     |                     3 |
+| 12     |                     3 |
+| 13     |                     1 |
+| 16+    |                    12 |
++--------+-----------------------+
+
+

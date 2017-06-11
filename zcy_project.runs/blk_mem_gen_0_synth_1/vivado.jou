@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Mon Jan  9 22:44:10 2017
+# Process ID: 45542
+# Current directory: /home/zcy/vga3/vga4/vga4.runs/blk_mem_gen_0_synth_1
+# Command line: vivado -log blk_mem_gen_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source blk_mem_gen_0.tcl
+# Log file: /home/zcy/vga3/vga4/vga4.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.vds
+# Journal file: /home/zcy/vga3/vga4/vga4.runs/blk_mem_gen_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source blk_mem_gen_0.tcl -notrace

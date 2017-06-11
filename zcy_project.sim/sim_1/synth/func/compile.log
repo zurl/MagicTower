@@ -1,0 +1,31 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zcy/vga3/vga4/vga4.sim/sim_1/synth/func/top_test_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DisplaySync_MUSER_disp_num
+INFO: [VRFC 10-311] analyzing module Keyboard
+INFO: [VRFC 10-311] analyzing module Mux4to1
+INFO: [VRFC 10-311] analyzing module Mux4to14b
+INFO: [VRFC 10-311] analyzing module Mux4to14b_1
+INFO: [VRFC 10-311] analyzing module Mux4to1_0
+INFO: [VRFC 10-311] analyzing module MyMC14495
+INFO: [VRFC 10-311] analyzing module Top
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-311] analyzing module clkdiv
+INFO: [VRFC 10-311] analyzing module clkdiv22
+INFO: [VRFC 10-311] analyzing module disp_num
+INFO: [VRFC 10-311] analyzing module vga_display
+INFO: [VRFC 10-311] analyzing module vga_sync
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0_blk_mem_gen_mux
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0_blk_mem_gen_prim_width
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0_blk_mem_gen_prim_width__parameterized0
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init__parameterized0
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0_blk_mem_gen_top
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0_blk_mem_gen_v8_3_5
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0_blk_mem_gen_v8_3_5_synth
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zcy/vga3/test2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zcy/vga3/rqwewqe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rqwewqe
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zcy/vga3/top_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_test

@@ -1,0 +1,63 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zcy/vga3/vga4/vga4.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zcy/vga3/map_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module map_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zcy/vga3/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zcy/vga3/DisplaySync.vf" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DisplaySync
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zcy/vga3/MyMC14495.vf" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MyMC14495
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zcy/vga3/Mux4to14b.vf" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux4to14b
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zcy/vga3/Mux4to1.vf" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux4to1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zcy/vga3/vga_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zcy/vga3/vga_display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_display
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zcy/vga3/pbdebounce.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pbdebounce
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zcy/vga3/HEXtoBCD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HEXtoBCD
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zcy/vga3/disp_num.vf" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkdiv22
+INFO: [VRFC 10-311] analyzing module DisplaySync_MUSER_disp_num
+INFO: [VRFC 10-311] analyzing module disp_num
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zcy/vga3/clkdiv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkdiv
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zcy/vga3/Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkdiv2
+INFO: [VRFC 10-311] analyzing module Top
+WARNING: [VRFC 10-756] identifier status_key is used before its declaration [/home/zcy/vga3/Top.v:108]
+WARNING: [VRFC 10-756] identifier time_buffer is used before its declaration [/home/zcy/vga3/Top.v:109]
+WARNING: [VRFC 10-756] identifier mem_in is used before its declaration [/home/zcy/vga3/Top.v:111]
+WARNING: [VRFC 10-756] identifier mem_out is used before its declaration [/home/zcy/vga3/Top.v:112]
+WARNING: [VRFC 10-756] identifier mem_addr_real is used before its declaration [/home/zcy/vga3/Top.v:113]
+WARNING: [VRFC 10-756] identifier mem_addr is used before its declaration [/home/zcy/vga3/Top.v:114]
+WARNING: [VRFC 10-756] identifier status_on_floor_read is used before its declaration [/home/zcy/vga3/Top.v:115]
+WARNING: [VRFC 10-756] identifier map is used before its declaration [/home/zcy/vga3/Top.v:121]
+WARNING: [VRFC 10-756] identifier map is used before its declaration [/home/zcy/vga3/Top.v:122]
+WARNING: [VRFC 10-756] identifier map is used before its declaration [/home/zcy/vga3/Top.v:123]
+WARNING: [VRFC 10-756] identifier map is used before its declaration [/home/zcy/vga3/Top.v:124]
+WARNING: [VRFC 10-756] identifier map is used before its declaration [/home/zcy/vga3/Top.v:125]
+WARNING: [VRFC 10-756] identifier map is used before its declaration [/home/zcy/vga3/Top.v:126]
+WARNING: [VRFC 10-756] identifier map is used before its declaration [/home/zcy/vga3/Top.v:127]
+WARNING: [VRFC 10-756] identifier map is used before its declaration [/home/zcy/vga3/Top.v:128]
+WARNING: [VRFC 10-756] identifier input_dedo is used before its declaration [/home/zcy/vga3/Top.v:300]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zcy/vga3/F44MS49IFLC35N1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Keyboard
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zcy/vga3/vga4/vga4.srcs/sources_1/new/Buzzer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_50
+INFO: [VRFC 10-311] analyzing module pwm_generator
+INFO: [VRFC 10-311] analyzing module buzzer
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zcy/vga3/test2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zcy/vga3/rqwewqe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rqwewqe
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zcy/vga3/top_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zcy/vga3/vga4/vga4.srcs/sim_1/new/block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module block
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/zcy/vga3/vga4/vga4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

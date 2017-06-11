@@ -1,0 +1,1336 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Thu Jan 12 12:53:24 2017
+# Process ID: 5269
+# Current directory: /home/zcy/zcy_project/zcy_project.runs/synth_1
+# Command line: vivado -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
+# Log file: /home/zcy/zcy_project/zcy_project.runs/synth_1/Top.vds
+# Journal file: /home/zcy/zcy_project/zcy_project.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script '/home/wbx/Vivado/Vivado/2016.4/scripts/init.tcl'
+source Top.tcl -notrace
+Command: synth_design -top Top -part xc7k160tfbg676-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5870 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1256.195 ; gain = 161.078 ; free physical = 85225 ; free virtual = 93858
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Top' [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:35]
+	Parameter DIR_UP bound to: 16'b0000000000000101 
+	Parameter DIR_DOWN bound to: 16'b0000000000000010 
+	Parameter DIR_LEFT bound to: 16'b0000000000000011 
+	Parameter DIR_RIGHT bound to: 16'b0000000000000100 
+INFO: [Synth 8-3876] $readmem data file 'frame.mif' is read successfully [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:77]
+INFO: [Synth 8-638] synthesizing module 'buzzer' [/home/zcy/zcy_project/zcy_project.srcs/sources_1/new/Buzzer.v:88]
+	Parameter L1 bound to: 191130 - type: integer 
+	Parameter L2 bound to: 170241 - type: integer 
+	Parameter L3 bound to: 151698 - type: integer 
+	Parameter L4 bound to: 143183 - type: integer 
+	Parameter L5 bound to: 127550 - type: integer 
+	Parameter L6 bound to: 113635 - type: integer 
+	Parameter L7 bound to: 101234 - type: integer 
+	Parameter M1 bound to: 95546 - type: integer 
+	Parameter M2 bound to: 85134 - type: integer 
+	Parameter M3 bound to: 75837 - type: integer 
+	Parameter M4 bound to: 71581 - type: integer 
+	Parameter M5 bound to: 63775 - type: integer 
+	Parameter M6 bound to: 56817 - type: integer 
+	Parameter M7 bound to: 50617 - type: integer 
+	Parameter H1 bound to: 47823 - type: integer 
+	Parameter H2 bound to: 42563 - type: integer 
+	Parameter H3 bound to: 37921 - type: integer 
+	Parameter H4 bound to: 35793 - type: integer 
+	Parameter H5 bound to: 31887 - type: integer 
+	Parameter H6 bound to: 28408 - type: integer 
+	Parameter H7 bound to: 25309 - type: integer 
+	Parameter VO bound to: 200000 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'clk_50' [/home/zcy/zcy_project/zcy_project.srcs/sources_1/new/Buzzer.v:41]
+INFO: [Synth 8-256] done synthesizing module 'clk_50' (1#1) [/home/zcy/zcy_project/zcy_project.srcs/sources_1/new/Buzzer.v:41]
+INFO: [Synth 8-638] synthesizing module 'pwm_generator' [/home/zcy/zcy_project/zcy_project.srcs/sources_1/new/Buzzer.v:55]
+INFO: [Synth 8-256] done synthesizing module 'pwm_generator' (2#1) [/home/zcy/zcy_project/zcy_project.srcs/sources_1/new/Buzzer.v:55]
+INFO: [Synth 8-256] done synthesizing module 'buzzer' (3#1) [/home/zcy/zcy_project/zcy_project.srcs/sources_1/new/Buzzer.v:88]
+INFO: [Synth 8-638] synthesizing module 'clkdiv2' [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:21]
+INFO: [Synth 8-256] done synthesizing module 'clkdiv2' (4#1) [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:21]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [/home/zcy/zcy_project/zcy_project.runs/synth_1/.Xil/Vivado-5269-cpu06/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (5#1) [/home/zcy/zcy_project/zcy_project.runs/synth_1/.Xil/Vivado-5269-cpu06/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'Keyboard' [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/F44MS49IFLC35N1.v:23]
+INFO: [Synth 8-638] synthesizing module 'disp_num' [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/disp_num.vf:87]
+INFO: [Synth 8-638] synthesizing module 'GND' [/home/wbx/Vivado/Vivado/2016.4/scripts/rt/data/unisim_comp.v:4826]
+INFO: [Synth 8-256] done synthesizing module 'GND' (6#1) [/home/wbx/Vivado/Vivado/2016.4/scripts/rt/data/unisim_comp.v:4826]
+INFO: [Synth 8-638] synthesizing module 'clkdiv22' [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/disp_num.vf:23]
+INFO: [Synth 8-256] done synthesizing module 'clkdiv22' (7#1) [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/disp_num.vf:23]
+INFO: [Synth 8-638] synthesizing module 'MyMC14495' [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/MyMC14495.vf:23]
+INFO: [Synth 8-638] synthesizing module 'AND4' [/home/wbx/Vivado/Vivado/2016.4/scripts/rt/data/unisim_comp.v:108]
+INFO: [Synth 8-256] done synthesizing module 'AND4' (8#1) [/home/wbx/Vivado/Vivado/2016.4/scripts/rt/data/unisim_comp.v:108]
+INFO: [Synth 8-638] synthesizing module 'AND3' [/home/wbx/Vivado/Vivado/2016.4/scripts/rt/data/unisim_comp.v:60]
+INFO: [Synth 8-256] done synthesizing module 'AND3' (9#1) [/home/wbx/Vivado/Vivado/2016.4/scripts/rt/data/unisim_comp.v:60]
+INFO: [Synth 8-638] synthesizing module 'AND2' [/home/wbx/Vivado/Vivado/2016.4/scripts/rt/data/unisim_comp.v:14]
+INFO: [Synth 8-256] done synthesizing module 'AND2' (10#1) [/home/wbx/Vivado/Vivado/2016.4/scripts/rt/data/unisim_comp.v:14]
+INFO: [Synth 8-638] synthesizing module 'OR3' [/home/wbx/Vivado/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25548]
+INFO: [Synth 8-256] done synthesizing module 'OR3' (11#1) [/home/wbx/Vivado/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25548]
+INFO: [Synth 8-638] synthesizing module 'OR4' [/home/wbx/Vivado/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25596]
+INFO: [Synth 8-256] done synthesizing module 'OR4' (12#1) [/home/wbx/Vivado/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25596]
+INFO: [Synth 8-638] synthesizing module 'OR2' [/home/wbx/Vivado/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25502]
+INFO: [Synth 8-256] done synthesizing module 'OR2' (13#1) [/home/wbx/Vivado/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25502]
+INFO: [Synth 8-638] synthesizing module 'INV' [/home/wbx/Vivado/Vivado/2016.4/scripts/rt/data/unisim_comp.v:17255]
+INFO: [Synth 8-256] done synthesizing module 'INV' (14#1) [/home/wbx/Vivado/Vivado/2016.4/scripts/rt/data/unisim_comp.v:17255]
+INFO: [Synth 8-256] done synthesizing module 'MyMC14495' (15#1) [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/MyMC14495.vf:23]
+INFO: [Synth 8-638] synthesizing module 'DisplaySync_MUSER_disp_num' [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/disp_num.vf:37]
+INFO: [Synth 8-638] synthesizing module 'Mux4to1' [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Mux4to1.vf:23]
+INFO: [Synth 8-256] done synthesizing module 'Mux4to1' (16#1) [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Mux4to1.vf:23]
+INFO: [Synth 8-638] synthesizing module 'Mux4to14b' [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Mux4to14b.vf:23]
+INFO: [Synth 8-256] done synthesizing module 'Mux4to14b' (17#1) [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Mux4to14b.vf:23]
+INFO: [Synth 8-638] synthesizing module 'VCC' [/home/wbx/Vivado/Vivado/2016.4/scripts/rt/data/unisim_comp.v:44693]
+INFO: [Synth 8-256] done synthesizing module 'VCC' (18#1) [/home/wbx/Vivado/Vivado/2016.4/scripts/rt/data/unisim_comp.v:44693]
+INFO: [Synth 8-256] done synthesizing module 'DisplaySync_MUSER_disp_num' (19#1) [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/disp_num.vf:37]
+INFO: [Synth 8-256] done synthesizing module 'disp_num' (20#1) [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/disp_num.vf:87]
+INFO: [Synth 8-256] done synthesizing module 'Keyboard' (21#1) [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/F44MS49IFLC35N1.v:23]
+INFO: [Synth 8-638] synthesizing module 'clkdiv' [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/clkdiv.v:21]
+INFO: [Synth 8-256] done synthesizing module 'clkdiv' (22#1) [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/clkdiv.v:21]
+INFO: [Synth 8-638] synthesizing module 'HEXtoBCD' [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/HEXtoBCD.v:21]
+INFO: [Synth 8-256] done synthesizing module 'HEXtoBCD' (23#1) [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/HEXtoBCD.v:21]
+WARNING: [Synth 8-689] width (16) of port connection 'binary' does not match port width (12) of module 'HEXtoBCD' [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:515]
+WARNING: [Synth 8-689] width (16) of port connection 'binary' does not match port width (12) of module 'HEXtoBCD' [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:523]
+WARNING: [Synth 8-689] width (16) of port connection 'binary' does not match port width (12) of module 'HEXtoBCD' [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:531]
+WARNING: [Synth 8-689] width (16) of port connection 'binary' does not match port width (12) of module 'HEXtoBCD' [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:540]
+WARNING: [Synth 8-689] width (4) of port connection 'binary' does not match port width (12) of module 'HEXtoBCD' [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:549]
+WARNING: [Synth 8-689] width (4) of port connection 'binary' does not match port width (12) of module 'HEXtoBCD' [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:558]
+WARNING: [Synth 8-689] width (4) of port connection 'binary' does not match port width (12) of module 'HEXtoBCD' [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:567]
+WARNING: [Synth 8-689] width (32) of port connection 'binary' does not match port width (12) of module 'HEXtoBCD' [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:575]
+WARNING: [Synth 8-689] width (16) of port connection 'binary' does not match port width (12) of module 'HEXtoBCD' [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:584]
+WARNING: [Synth 8-689] width (16) of port connection 'binary' does not match port width (12) of module 'HEXtoBCD' [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:593]
+WARNING: [Synth 8-689] width (16) of port connection 'binary' does not match port width (12) of module 'HEXtoBCD' [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:602]
+WARNING: [Synth 8-689] width (16) of port connection 'binary' does not match port width (12) of module 'HEXtoBCD' [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:611]
+INFO: [Synth 8-638] synthesizing module 'vga_sync' [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/vga_sync.v:21]
+	Parameter h_pixel bound to: 800 - type: integer 
+	Parameter h_total bound to: 521 - type: integer 
+	Parameter hbp bound to: 144 - type: integer 
+	Parameter hfp bound to: 784 - type: integer 
+	Parameter vbp bound to: 31 - type: integer 
+	Parameter vfp bound to: 511 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'vga_sync' (24#1) [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/vga_sync.v:21]
+INFO: [Synth 8-638] synthesizing module 'vga_display' [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/vga_display.v:21]
+INFO: [Synth 8-256] done synthesizing module 'vga_display' (25#1) [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/vga_display.v:21]
+WARNING: [Synth 8-3936] Found unconnected internal register 'input_saved_reg' and it is trimmed from '20' to '16' bits. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:255]
+WARNING: [Synth 8-3848] Net docker[8] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[13] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[14] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[23] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[28] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[29] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[38] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[43] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[44] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[53] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[58] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[59] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[68] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[73] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[74] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[83] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[88] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[89] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[90] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[96] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[97] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[98] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[103] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[104] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[105] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[106] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[107] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[108] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[109] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[110] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[111] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[112] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[113] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[114] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[115] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[116] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[117] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[118] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[119] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[120] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[121] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[122] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[123] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[124] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[125] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[126] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[127] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[128] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[129] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[130] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[131] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[132] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[133] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[134] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[135] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[136] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[137] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[138] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[139] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[140] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[141] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[142] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[143] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[144] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[145] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[146] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[147] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[148] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+WARNING: [Synth 8-3848] Net docker[149] in module/entity Top does not have driver. [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:457]
+INFO: [Synth 8-256] done synthesizing module 'Top' (26#1) [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:35]
+WARNING: [Synth 8-3917] design Top has port LED[7] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port LED[6] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port LED[5] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port LED[4] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port LED[3] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port LED[2] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port LED[1] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port LED[0] driven by constant 0
+WARNING: [Synth 8-3331] design Top has unconnected port SW[14]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[13]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[10]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[9]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[8]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[7]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[6]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[5]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[4]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[3]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[2]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[1]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 1844.070 ; gain = 748.953 ; free physical = 84620 ; free virtual = 93265
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:46 ; elapsed = 00:00:52 . Memory (MB): peak = 1844.070 ; gain = 748.953 ; free physical = 84621 ; free virtual = 93267
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'blk_mem_gen_0' instantiated as 'blk_mem_gen_0_ins' [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:224]
+INFO: [Netlist 29-17] Analyzing 114 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7k160tfbg676-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/zcy/zcy_project/zcy_project.runs/synth_1/.Xil/Vivado-5269-cpu06/dcp/blk_mem_gen_0_in_context.xdc] for cell 'blk_mem_gen_0_ins'
+Finished Parsing XDC File [/home/zcy/zcy_project/zcy_project.runs/synth_1/.Xil/Vivado-5269-cpu06/dcp/blk_mem_gen_0_in_context.xdc] for cell 'blk_mem_gen_0_ins'
+Parsing XDC File [/home/zcy/zcy_project/zcy_project.srcs/constrs_1/imports/vga3/top.xdc]
+Finished Parsing XDC File [/home/zcy/zcy_project/zcy_project.srcs/constrs_1/imports/vga3/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/zcy/zcy_project/zcy_project.srcs/constrs_1/imports/vga3/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 114 instances were transformed.
+  AND2 => LUT2: 57 instances
+  AND3 => LUT3: 11 instances
+  AND4 => LUT4: 9 instances
+  INV => LUT1: 13 instances
+  OR2 => LUT2: 7 instances
+  OR3 => LUT3: 3 instances
+  OR4 => LUT4: 14 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2700.250 ; gain = 1.000 ; free physical = 84489 ; free virtual = 93134
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'blk_mem_gen_0_ins' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:04 ; elapsed = 00:01:11 . Memory (MB): peak = 2700.250 ; gain = 1605.133 ; free physical = 84488 ; free virtual = 93133
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 4 processes.
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k160tfbg676-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:04 ; elapsed = 00:01:11 . Memory (MB): peak = 2700.250 ; gain = 1605.133 ; free physical = 84488 ; free virtual = 93134
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:04 ; elapsed = 00:01:11 . Memory (MB): peak = 2700.250 ; gain = 1605.133 ; free physical = 84487 ; free virtual = 93132
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "Pitch_num" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vs_enable" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'docker_reg[84][8:0]' into 'docker_reg[69][8:0]' [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:475]
+INFO: [Synth 8-4471] merging register 'docker_reg[99][8:0]' into 'docker_reg[69][8:0]' [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:475]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/zcy/zcy_project/zcy_project.srcs/sources_1/imports/vga3/Top.v:277]
+INFO: [Synth 8-5546] ROM "tmp_upstair_able" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_downstair_able" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[32]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[32]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[33]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[33]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[34]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[34]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[35]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[35]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[36]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[36]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[37]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[37]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[38]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[38]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[39]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[39]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[40]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[40]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[41]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[41]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[42]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[42]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[43]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[43]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[44]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[44]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[45]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[45]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[46]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[46]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[47]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map_reg[47]" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5545] ROM "status_exp" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "animation_buffer" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "status_exp" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "animation_buffer" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "docker" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "animation_status1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "docker" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "docker" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:08 ; elapsed = 00:02:16 . Memory (MB): peak = 2700.250 ; gain = 1605.133 ; free physical = 82707 ; free virtual = 91353
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |Top__GB0      |           1|     46553|
+|2     |Top__GB1      |           1|     13264|
+|3     |Top__GB2      |           1|     14739|
+|4     |Top__GB3      |           1|     20938|
+|5     |Top__GB4      |           1|     26331|
+|6     |Top__GB5      |           1|     31812|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 15    
+	   3 Input     16 Bit       Adders := 4     
+	   2 Input     13 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 7     
+	   2 Input      5 Bit       Adders := 48    
+	   2 Input      4 Bit       Adders := 328   
+	   2 Input      2 Bit       Adders := 4     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 9     
+	               15 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 60    
+	                8 Bit    Registers := 260   
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 10    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 9     
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 6     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 1     
+	   6 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 15    
+	  42 Input     16 Bit        Muxes := 3     
+	   4 Input     16 Bit        Muxes := 2     
+	   5 Input     16 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 22    
+	   5 Input      9 Bit        Muxes := 10    
+	   2 Input      8 Bit        Muxes := 1806  
+	  10 Input      8 Bit        Muxes := 255   
+	   3 Input      8 Bit        Muxes := 512   
+	   4 Input      8 Bit        Muxes := 1     
+	   5 Input      6 Bit        Muxes := 5     
+	   3 Input      6 Bit        Muxes := 2     
+	   3 Input      5 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 498   
+	   3 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 518   
+	  14 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 6     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2620  
+	   3 Input      1 Bit        Muxes := 263   
+	   4 Input      1 Bit        Muxes := 2     
+	  14 Input      1 Bit        Muxes := 2     
+	  13 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input     16 Bit       Adders := 15    
+	   3 Input     16 Bit       Adders := 4     
+	   2 Input     13 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 5     
+	   2 Input      5 Bit       Adders := 48    
+	   2 Input      4 Bit       Adders := 15    
+	   2 Input      2 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 9     
+	               15 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                9 Bit    Registers := 60    
+	                8 Bit    Registers := 257   
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 6     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     20 Bit        Muxes := 1     
+	   6 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 15    
+	  42 Input     16 Bit        Muxes := 3     
+	   4 Input     16 Bit        Muxes := 2     
+	   5 Input     16 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 22    
+	   5 Input      9 Bit        Muxes := 10    
+	   2 Input      8 Bit        Muxes := 1805  
+	  10 Input      8 Bit        Muxes := 255   
+	   3 Input      8 Bit        Muxes := 512   
+	   4 Input      8 Bit        Muxes := 1     
+	   5 Input      6 Bit        Muxes := 5     
+	   3 Input      6 Bit        Muxes := 2     
+	   3 Input      5 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 278   
+	   3 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 518   
+	  14 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 6     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2615  
+	   3 Input      1 Bit        Muxes := 263   
+	   4 Input      1 Bit        Muxes := 2     
+	  14 Input      1 Bit        Muxes := 2     
+	  13 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+Module HEXtoBCD__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 26    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 18    
+Module HEXtoBCD__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 26    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 18    
+Module HEXtoBCD__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 26    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 18    
+Module HEXtoBCD__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 26    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 18    
+Module HEXtoBCD__5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 26    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 18    
+Module HEXtoBCD__6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 26    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 18    
+Module HEXtoBCD__7 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 26    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 18    
+Module HEXtoBCD__8 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 26    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 18    
+Module HEXtoBCD__9 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 26    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 18    
+Module HEXtoBCD__10 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 26    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 18    
+Module HEXtoBCD__11 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 26    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 18    
+Module HEXtoBCD 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 26    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 18    
+Module vga_display 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+Module vga_sync 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clkdiv 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+Module Keyboard 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module clk_50 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module pwm_generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module buzzer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 600 (col length:100)
+BRAMs: 650 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design Top has port LED[7] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port LED[6] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port LED[5] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port LED[4] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port LED[3] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port LED[2] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port LED[1] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port LED[0] driven by constant 0
+WARNING: [Synth 8-3331] design Top has unconnected port SW[14]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[13]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[10]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[9]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[8]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[7]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[6]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[5]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[4]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[3]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[2]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[1]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[0]
+INFO: [Synth 8-3886] merging instance 'docker_reg[69][0]' (FDRE) to 'docker_reg[69][8]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[54][0]' (FDSE) to 'docker_reg[54][2]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[45][0]' (FD) to 'docker_reg[47][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[42][0]' (FD) to 'docker_reg[95][8]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[41][0]' (FD) to 'docker_reg[95][8]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[35][0]' (FD) to 'docker_reg[95][8]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[33][0]' (FD) to 'docker_reg[95][8]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[32][0]' (FD) to 'docker_reg[95][8]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[31][0]' (FD) to 'docker_reg[95][8]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[30][0]' (FD) to 'docker_reg[95][8]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[26][0]' (FD) to 'docker_reg[26][3]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[25][0]' (FD) to 'docker_reg[25][2]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[12][0]' (FDR) to 'docker_reg[12][2]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[11][0]' (FD) to 'docker_reg[27][8]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[10][0]' (FD) to 'docker_reg[27][8]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[9][0]' (FDE) to 'docker_reg[9][8]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[69][1]' (FDRE) to 'docker_reg[69][8]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[67][1]' (FD) to 'docker_reg[95][8]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[54][1]' (FDRE) to 'docker_reg[54][5]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[45][1]' (FD) to 'docker_reg[95][8]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[42][1]' (FD) to 'docker_reg[42][5]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[41][1]' (FD) to 'docker_reg[41][5]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[40][1]' (FD) to 'docker_reg[40][5]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[39][1]' (FDE) to 'docker_reg[39][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[37][1]' (FD) to 'docker_reg[95][8]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[35][1]' (FD) to 'docker_reg[95][8]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[33][1]' (FD) to 'docker_reg[95][8]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[32][1]' (FD) to 'docker_reg[95][8]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[31][1]' (FD) to 'docker_reg[95][8]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[30][1]' (FD) to 'docker_reg[95][8]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[27][1]' (FD) to 'docker_reg[27][3]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[26][1]' (FD) to 'docker_reg[26][2]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[25][1]' (FD) to 'docker_reg[27][8]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[12][1]' (FDS) to 'docker_reg[12][3]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[11][1]' (FD) to 'docker_reg[11][2]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[10][1]' (FD) to 'docker_reg[27][8]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[69][2]' (FDRE) to 'docker_reg[69][8]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[67][2]' (FD) to 'docker_reg[95][8]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[45][2]' (FD) to 'docker_reg[47][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[42][2]' (FD) to 'docker_reg[95][8]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[41][2]' (FD) to 'docker_reg[95][8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\docker_reg[39][2] )
+INFO: [Synth 8-3886] merging instance 'docker_reg[37][2]' (FD) to 'docker_reg[95][8]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[35][2]' (FD) to 'docker_reg[95][8]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[33][2]' (FD) to 'docker_reg[95][8]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[32][2]' (FD) to 'docker_reg[95][8]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[31][2]' (FD) to 'docker_reg[95][8]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[30][2]' (FD) to 'docker_reg[47][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[27][2]' (FD) to 'docker_reg[27][8]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[12][2]' (FDR) to 'docker_reg[12][6]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[102][3]' (FDE) to 'docker_reg[102][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[101][3]' (FDE) to 'docker_reg[101][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[100][3]' (FDE) to 'docker_reg[100][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[95][3]' (FD) to 'docker_reg[95][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[94][3]' (FD) to 'docker_reg[94][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[93][3]' (FD) to 'docker_reg[93][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[92][3]' (FD) to 'docker_reg[92][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[91][3]' (FD) to 'docker_reg[91][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[87][3]' (FDE) to 'docker_reg[87][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[86][3]' (FDE) to 'docker_reg[86][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[85][3]' (FDR) to 'docker_reg[85][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[82][3]' (FD) to 'docker_reg[82][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[80][3]' (FD) to 'docker_reg[80][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[79][3]' (FD) to 'docker_reg[79][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[78][3]' (FD) to 'docker_reg[78][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[77][3]' (FD) to 'docker_reg[77][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[76][3]' (FD) to 'docker_reg[76][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[75][3]' (FD) to 'docker_reg[75][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[72][3]' (FD) to 'docker_reg[72][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[71][3]' (FD) to 'docker_reg[71][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[70][3]' (FD) to 'docker_reg[70][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[69][3]' (FDRE) to 'docker_reg[69][8]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[67][3]' (FD) to 'docker_reg[47][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[65][3]' (FD) to 'docker_reg[65][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[64][3]' (FD) to 'docker_reg[64][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[63][3]' (FD) to 'docker_reg[63][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[62][3]' (FD) to 'docker_reg[62][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[61][3]' (FD) to 'docker_reg[61][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[60][3]' (FD) to 'docker_reg[60][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[57][3]' (FD) to 'docker_reg[57][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[56][3]' (FD) to 'docker_reg[56][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[55][3]' (FD) to 'docker_reg[55][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[54][3]' (FDSE) to 'docker_reg[54][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[52][3]' (FD) to 'docker_reg[52][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[50][3]' (FD) to 'docker_reg[47][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[49][3]' (FD) to 'docker_reg[49][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[48][3]' (FD) to 'docker_reg[47][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[47][3]' (FD) to 'docker_reg[47][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[46][3]' (FD) to 'docker_reg[47][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[45][3]' (FD) to 'docker_reg[47][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[42][3]' (FD) to 'docker_reg[42][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[41][3]' (FD) to 'docker_reg[41][4]'
+INFO: [Synth 8-3886] merging instance 'docker_reg[40][3]' (FD) to 'docker_reg[40][4]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\docker_reg[30][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\docker_reg[69][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\docker_reg[54][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\docker_reg[12][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\docker_reg[10][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\docker_reg[9][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\docker_reg[7][8] )
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5545] ROM "status_exp" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+DSP Report: Generating DSP mem_addr_real, operation Mode is: C+A*(B:0x79).
+DSP Report: operator mem_addr_real is absorbed into DSP mem_addr_real.
+DSP Report: operator p_0_out is absorbed into DSP mem_addr_real.
+INFO: [Synth 8-3886] merging instance 'status_floor_reg[12]' (FDRE) to 'status_floor_reg[11]'
+INFO: [Synth 8-3886] merging instance 'status_floor_reg[11]' (FDRE) to 'status_floor_reg[10]'
+INFO: [Synth 8-3886] merging instance 'status_floor_reg[10]' (FDRE) to 'status_floor_reg[4]'
+INFO: [Synth 8-3886] merging instance 'status_floor_reg[4]' (FDRE) to 'status_floor_reg[5]'
+INFO: [Synth 8-3886] merging instance 'status_floor_reg[5]' (FDRE) to 'status_floor_reg[6]'
+INFO: [Synth 8-3886] merging instance 'status_floor_reg[6]' (FDRE) to 'status_floor_reg[7]'
+INFO: [Synth 8-3886] merging instance 'status_floor_reg[7]' (FDRE) to 'status_floor_reg[8]'
+INFO: [Synth 8-3886] merging instance 'status_floor_reg[8]' (FDRE) to 'status_floor_reg[9]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\status_floor_reg[9] )
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5545] ROM "animation_buffer" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (bze/\counter_ccr_reg[31] )
+WARNING: [Synth 8-3332] Sequential element (mm/XLXI_1/clkdiv_reg[19]) is unused and will be removed from module Keyboard.
+WARNING: [Synth 8-3332] Sequential element (mm/XLXI_1/clkdiv_reg[20]) is unused and will be removed from module Keyboard.
+WARNING: [Synth 8-3332] Sequential element (mm/XLXI_1/clkdiv_reg[21]) is unused and will be removed from module Keyboard.
+WARNING: [Synth 8-3332] Sequential element (mm/XLXI_1/clkdiv_reg[22]) is unused and will be removed from module Keyboard.
+WARNING: [Synth 8-3332] Sequential element (mm/XLXI_1/clkdiv_reg[23]) is unused and will be removed from module Keyboard.
+WARNING: [Synth 8-3332] Sequential element (mm/XLXI_1/clkdiv_reg[24]) is unused and will be removed from module Keyboard.
+WARNING: [Synth 8-3332] Sequential element (mm/XLXI_1/clkdiv_reg[25]) is unused and will be removed from module Keyboard.
+WARNING: [Synth 8-3332] Sequential element (mm/XLXI_1/clkdiv_reg[26]) is unused and will be removed from module Keyboard.
+WARNING: [Synth 8-3332] Sequential element (mm/XLXI_1/clkdiv_reg[27]) is unused and will be removed from module Keyboard.
+WARNING: [Synth 8-3332] Sequential element (mm/XLXI_1/clkdiv_reg[28]) is unused and will be removed from module Keyboard.
+WARNING: [Synth 8-3332] Sequential element (mm/XLXI_1/clkdiv_reg[29]) is unused and will be removed from module Keyboard.
+WARNING: [Synth 8-3332] Sequential element (mm/XLXI_1/clkdiv_reg[30]) is unused and will be removed from module Keyboard.
+WARNING: [Synth 8-3332] Sequential element (mm/XLXI_1/clkdiv_reg[31]) is unused and will be removed from module Keyboard.
+WARNING: [Synth 8-3332] Sequential element (data_reg[0]) is unused and will be removed from module Keyboard.
+WARNING: [Synth 8-3332] Sequential element (counter_ccr_reg[31]) is unused and will be removed from module buzzer.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:29 ; elapsed = 00:02:48 . Memory (MB): peak = 2700.250 ; gain = 1605.133 ; free physical = 81822 ; free virtual = 90469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+-------------+---------------+----------------+
+|Module Name | RTL Object  | Depth x Width | Implemented As | 
++------------+-------------+---------------+----------------+
+|buzzer      | counter_arr | 256x18        | LUT            | 
+|Top         | p_0_out     | 64x16         | LUT            | 
+|Top         | p_0_out     | 64x16         | LUT            | 
+|Top         | p_0_out     | 32x4          | LUT            | 
+|Top         | p_0_out     | 32x4          | LUT            | 
+|Top         | p_0_out     | 32x4          | LUT            | 
+|Top         | p_0_out     | 32x4          | LUT            | 
+|Top         | data_reg    | 524288x12     | Block RAM      | 
++------------+-------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Top         | C+A*(B:0x79) | 13     | 7      | 13     | -      | 13     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |Top__GB0      |           1|     13017|
+|2     |Top__GB1      |           1|      1523|
+|3     |Top__GB2      |           1|      5258|
+|4     |Top__GB3      |           1|      2120|
+|5     |Top__GB4      |           1|      6171|
+|6     |Top__GB5      |           1|      5639|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:39 ; elapsed = 00:02:58 . Memory (MB): peak = 2734.227 ; gain = 1639.109 ; free physical = 81614 ; free virtual = 90261
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_2/\docker_reg[7][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\docker_reg[7][5] )
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:29 ; elapsed = 00:03:49 . Memory (MB): peak = 3032.039 ; gain = 1936.922 ; free physical = 81319 ; free virtual = 89967
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |Top__GB1      |           1|      1522|
+|2     |Top__GB2      |           1|      5111|
+|3     |Top_GT0       |           1|     25676|
+|4     |buzzer        |           1|       640|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\docker_reg[56][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\docker_reg[101][5] )
+WARNING: [Synth 8-3332] Sequential element (docker_reg[56][2]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (docker_reg[101][5]) is unused and will be removed from module Top.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_1_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_1_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_1_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_1_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_1_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_1_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_1_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_1_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_1_8 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_1_9 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_1_10 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_1_11 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_3_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_3_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_3_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_3_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_3_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_3_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_3_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_3_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_3_8 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_3_9 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_3_10 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_3_11 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_5_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_5_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_5_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_5_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_5_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_5_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_5_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_5_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_5_8 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_5_9 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_5_10 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_5_11 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_7_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_7_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_7_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_7_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_7_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_7_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_7_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_7_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_7_8 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_7_9 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_7_10 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_7_11 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_9_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_9_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_9_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_9_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_9_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_9_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_9_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_9_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_9_8 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_9_9 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_9_10 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_9_11 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_11_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_11_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_11_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_11_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_11_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_11_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_11_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_11_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_11_8 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_11_9 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_11_10 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_11_11 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_13_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_13_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_13_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_13_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_13_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_13_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_13_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_13_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_13_8 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_13_9 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_13_10 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_13_11 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_15_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_15_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_15_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_15_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_15_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_15_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_15_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_15_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_15_8 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_15_9 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_15_10 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/data_reg_15_11 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:35 ; elapsed = 00:04:18 . Memory (MB): peak = 3114.965 ; gain = 2019.848 ; free physical = 80749 ; free virtual = 89400
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |Top_GT0       |           1|     11866|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance data_reg_1_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance data_reg_1_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance data_reg_1_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance data_reg_1_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Common 17-14] Message 'Synth 8-4480' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:41 ; elapsed = 00:04:25 . Memory (MB): peak = 3114.965 ; gain = 2019.848 ; free physical = 80749 ; free virtual = 89400
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:41 ; elapsed = 00:04:25 . Memory (MB): peak = 3114.965 ; gain = 2019.848 ; free physical = 80749 ; free virtual = 89400
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:43 ; elapsed = 00:04:26 . Memory (MB): peak = 3114.965 ; gain = 2019.848 ; free physical = 80749 ; free virtual = 89400
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:43 ; elapsed = 00:04:26 . Memory (MB): peak = 3114.965 ; gain = 2019.848 ; free physical = 80749 ; free virtual = 89400
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:44 ; elapsed = 00:04:28 . Memory (MB): peak = 3114.965 ; gain = 2019.848 ; free physical = 80749 ; free virtual = 89400
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:44 ; elapsed = 00:04:28 . Memory (MB): peak = 3114.965 ; gain = 2019.848 ; free physical = 80749 ; free virtual = 89400
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |blk_mem_gen_0 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |blk_mem_gen_0 |     1|
+|2     |AND2          |    57|
+|3     |AND3          |    11|
+|4     |AND4          |     9|
+|5     |BUFG          |     3|
+|6     |CARRY4        |   266|
+|7     |DSP48E1_1     |     1|
+|8     |INV           |     7|
+|9     |LUT1          |   450|
+|10    |LUT2          |   820|
+|11    |LUT3          |   713|
+|12    |LUT4          |  1280|
+|13    |LUT5          |  1545|
+|14    |LUT6          |  6182|
+|15    |MUXF7         |   416|
+|16    |MUXF8         |   162|
+|17    |OR2           |     7|
+|18    |OR3           |     3|
+|19    |OR4           |    14|
+|20    |RAMB36E1      |     1|
+|21    |RAMB36E1_1    |     1|
+|22    |RAMB36E1_10   |     1|
+|23    |RAMB36E1_100  |     1|
+|24    |RAMB36E1_101  |     1|
+|25    |RAMB36E1_102  |     1|
+|26    |RAMB36E1_103  |     1|
+|27    |RAMB36E1_104  |     1|
+|28    |RAMB36E1_105  |     1|
+|29    |RAMB36E1_106  |     1|
+|30    |RAMB36E1_107  |     1|
+|31    |RAMB36E1_108  |     1|
+|32    |RAMB36E1_109  |     1|
+|33    |RAMB36E1_11   |     1|
+|34    |RAMB36E1_110  |     1|
+|35    |RAMB36E1_111  |     1|
+|36    |RAMB36E1_112  |     1|
+|37    |RAMB36E1_113  |     1|
+|38    |RAMB36E1_114  |     1|
+|39    |RAMB36E1_115  |     1|
+|40    |RAMB36E1_116  |     1|
+|41    |RAMB36E1_117  |     1|
+|42    |RAMB36E1_118  |     1|
+|43    |RAMB36E1_119  |     1|
+|44    |RAMB36E1_12   |     1|
+|45    |RAMB36E1_120  |     1|
+|46    |RAMB36E1_121  |     1|
+|47    |RAMB36E1_122  |     1|
+|48    |RAMB36E1_123  |     1|
+|49    |RAMB36E1_124  |     1|
+|50    |RAMB36E1_125  |     1|
+|51    |RAMB36E1_126  |     1|
+|52    |RAMB36E1_127  |     1|
+|53    |RAMB36E1_128  |     1|
+|54    |RAMB36E1_129  |     1|
+|55    |RAMB36E1_13   |     1|
+|56    |RAMB36E1_130  |     1|
+|57    |RAMB36E1_131  |     1|
+|58    |RAMB36E1_132  |     1|
+|59    |RAMB36E1_133  |     1|
+|60    |RAMB36E1_134  |     1|
+|61    |RAMB36E1_135  |     1|
+|62    |RAMB36E1_136  |     1|
+|63    |RAMB36E1_137  |     1|
+|64    |RAMB36E1_138  |     1|
+|65    |RAMB36E1_139  |     1|
+|66    |RAMB36E1_14   |     1|
+|67    |RAMB36E1_140  |     1|
+|68    |RAMB36E1_141  |     1|
+|69    |RAMB36E1_142  |     1|
+|70    |RAMB36E1_143  |     1|
+|71    |RAMB36E1_144  |     1|
+|72    |RAMB36E1_145  |     1|
+|73    |RAMB36E1_146  |     1|
+|74    |RAMB36E1_147  |     1|
+|75    |RAMB36E1_148  |     1|
+|76    |RAMB36E1_149  |     1|
+|77    |RAMB36E1_15   |     1|
+|78    |RAMB36E1_150  |     1|
+|79    |RAMB36E1_151  |     1|
+|80    |RAMB36E1_152  |     1|
+|81    |RAMB36E1_153  |     1|
+|82    |RAMB36E1_154  |     1|
+|83    |RAMB36E1_155  |     1|
+|84    |RAMB36E1_156  |     1|
+|85    |RAMB36E1_157  |     1|
+|86    |RAMB36E1_158  |     1|
+|87    |RAMB36E1_159  |     1|
+|88    |RAMB36E1_16   |     1|
+|89    |RAMB36E1_160  |    12|
+|90    |RAMB36E1_161  |    12|
+|91    |RAMB36E1_17   |     1|
+|92    |RAMB36E1_18   |     1|
+|93    |RAMB36E1_19   |     1|
+|94    |RAMB36E1_2    |     1|
+|95    |RAMB36E1_20   |     1|
+|96    |RAMB36E1_21   |     1|
+|97    |RAMB36E1_22   |     1|
+|98    |RAMB36E1_23   |     1|
+|99    |RAMB36E1_24   |     3|
+|100   |RAMB36E1_25   |     1|
+|101   |RAMB36E1_26   |     3|
+|102   |RAMB36E1_27   |     1|
+|103   |RAMB36E1_28   |     3|
+|104   |RAMB36E1_29   |     1|
+|105   |RAMB36E1_3    |     1|
+|106   |RAMB36E1_30   |     3|
+|107   |RAMB36E1_31   |     1|
+|108   |RAMB36E1_32   |     1|
+|109   |RAMB36E1_33   |     1|
+|110   |RAMB36E1_34   |     1|
+|111   |RAMB36E1_35   |     1|
+|112   |RAMB36E1_36   |     1|
+|113   |RAMB36E1_37   |     1|
+|114   |RAMB36E1_38   |     1|
+|115   |RAMB36E1_39   |     1|
+|116   |RAMB36E1_4    |     1|
+|117   |RAMB36E1_40   |     1|
+|118   |RAMB36E1_41   |     1|
+|119   |RAMB36E1_42   |     1|
+|120   |RAMB36E1_43   |     1|
+|121   |RAMB36E1_44   |     1|
+|122   |RAMB36E1_45   |     1|
+|123   |RAMB36E1_46   |     1|
+|124   |RAMB36E1_47   |     1|
+|125   |RAMB36E1_48   |     1|
+|126   |RAMB36E1_49   |     1|
+|127   |RAMB36E1_5    |     1|
+|128   |RAMB36E1_50   |     1|
+|129   |RAMB36E1_51   |     1|
+|130   |RAMB36E1_52   |     1|
+|131   |RAMB36E1_53   |     1|
+|132   |RAMB36E1_54   |     1|
+|133   |RAMB36E1_55   |     1|
+|134   |RAMB36E1_56   |     1|
+|135   |RAMB36E1_57   |     1|
+|136   |RAMB36E1_58   |     1|
+|137   |RAMB36E1_59   |     1|
+|138   |RAMB36E1_6    |     1|
+|139   |RAMB36E1_60   |     1|
+|140   |RAMB36E1_61   |     1|
+|141   |RAMB36E1_62   |     1|
+|142   |RAMB36E1_63   |     1|
+|143   |RAMB36E1_64   |     1|
+|144   |RAMB36E1_65   |     1|
+|145   |RAMB36E1_66   |     1|
+|146   |RAMB36E1_67   |     1|
+|147   |RAMB36E1_68   |     1|
+|148   |RAMB36E1_69   |     1|
+|149   |RAMB36E1_7    |     1|
+|150   |RAMB36E1_70   |     1|
+|151   |RAMB36E1_71   |     1|
+|152   |RAMB36E1_72   |     1|
+|153   |RAMB36E1_73   |     1|
+|154   |RAMB36E1_74   |     1|
+|155   |RAMB36E1_75   |     1|
+|156   |RAMB36E1_76   |     1|
+|157   |RAMB36E1_77   |     1|
+|158   |RAMB36E1_78   |     1|
+|159   |RAMB36E1_79   |     1|
+|160   |RAMB36E1_8    |     1|
+|161   |RAMB36E1_80   |     1|
+|162   |RAMB36E1_81   |     1|
+|163   |RAMB36E1_82   |     1|
+|164   |RAMB36E1_83   |     1|
+|165   |RAMB36E1_84   |     1|
+|166   |RAMB36E1_85   |     1|
+|167   |RAMB36E1_86   |     1|
+|168   |RAMB36E1_87   |     1|
+|169   |RAMB36E1_88   |     1|
+|170   |RAMB36E1_89   |     1|
+|171   |RAMB36E1_9    |     1|
+|172   |RAMB36E1_90   |     1|
+|173   |RAMB36E1_91   |     1|
+|174   |RAMB36E1_92   |     1|
+|175   |RAMB36E1_93   |     1|
+|176   |RAMB36E1_94   |     1|
+|177   |RAMB36E1_95   |     1|
+|178   |RAMB36E1_96   |     1|
+|179   |RAMB36E1_97   |     1|
+|180   |RAMB36E1_98   |     1|
+|181   |RAMB36E1_99   |     1|
+|182   |FDCE          |    89|
+|183   |FDPE          |     1|
+|184   |FDRE          |  2439|
+|185   |FDSE          |   269|
+|186   |IBUF          |     6|
+|187   |OBUF          |    35|
++------+--------------+------+
+
+Report Instance Areas: 
++------+------------------+---------------------------+------+
+|      |Instance          |Module                     |Cells |
++------+------------------+---------------------------+------+
+|1     |top               |                           | 14985|
+|2     |  U0              |clkdiv                     |     4|
+|3     |  bze             |buzzer                     |   357|
+|4     |    m0            |clk_50                     |     2|
+|5     |    m1            |pwm_generator              |   150|
+|6     |  kbd             |Keyboard                   |   254|
+|7     |    mm            |disp_num                   |   151|
+|8     |      XLXI_1      |clkdiv22                   |    43|
+|9     |      XLXI_2      |MyMC14495                  |    40|
+|10    |      XLXI_3      |DisplaySync_MUSER_disp_num |    68|
+|11    |        XLXI_1    |Mux4to1                    |     9|
+|12    |        XLXI_2    |Mux4to1_0                  |     9|
+|13    |        XLXI_3    |Mux4to14b                  |    24|
+|14    |        XLXI_4    |Mux4to14b_1                |    26|
+|15    |  vga_display_ins |vga_display                |    48|
+|16    |  vga_sync_ins    |vga_sync                   |  1054|
++------+------------------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:44 ; elapsed = 00:04:28 . Memory (MB): peak = 3114.965 ; gain = 2019.848 ; free physical = 80749 ; free virtual = 89400
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 38 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:28 ; elapsed = 00:04:13 . Memory (MB): peak = 3114.965 ; gain = 1068.590 ; free physical = 83764 ; free virtual = 92415
+Synthesis Optimization Complete : Time (s): cpu = 00:03:44 ; elapsed = 00:04:30 . Memory (MB): peak = 3114.965 ; gain = 2019.848 ; free physical = 83769 ; free virtual = 92414
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 573 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'Top' is not ideal for floorplanning, since the cellview 'Top' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 108 instances were transformed.
+  AND2 => LUT2: 57 instances
+  AND3 => LUT3: 11 instances
+  AND4 => LUT4: 9 instances
+  INV => LUT1: 7 instances
+  OR2 => LUT2: 7 instances
+  OR3 => LUT3: 3 instances
+  OR4 => LUT4: 14 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+413 Infos, 144 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:45 ; elapsed = 00:04:29 . Memory (MB): peak = 3592.066 ; gain = 2419.453 ; free physical = 83769 ; free virtual = 92412
+INFO: [Common 17-1381] The checkpoint '/home/zcy/zcy_project/zcy_project.runs/synth_1/Top.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.33 . Memory (MB): peak = 3831.078 ; gain = 0.000 ; free physical = 83769 ; free virtual = 92415
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 12 12:58:07 2017...

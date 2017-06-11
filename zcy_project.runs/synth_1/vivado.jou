@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Thu Jan 12 12:53:24 2017
+# Process ID: 5269
+# Current directory: /home/zcy/zcy_project/zcy_project.runs/synth_1
+# Command line: vivado -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
+# Log file: /home/zcy/zcy_project/zcy_project.runs/synth_1/Top.vds
+# Journal file: /home/zcy/zcy_project/zcy_project.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source Top.tcl -notrace

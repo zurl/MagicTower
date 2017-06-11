@@ -1,0 +1,68 @@
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /home/wbx/Vivado/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto 998d3f3deb4043a8a7c81379036c6b10 --debug typical --relax --mt 8 -L blk_mem_gen_v8_3_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_test_behav xil_defaultlib.top_test xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running fuse with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 64 differs from formal bit length 128 for port t_map [/home/zcy/vga3/top_test.v:61]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 12 for port binary [/home/zcy/vga3/Top.v:523]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port wea [/home/zcy/vga3/top_test.v:67]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 13 for port addra [/home/zcy/vga3/top_test.v:68]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 8 for port dina [/home/zcy/vga3/top_test.v:69]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 8 for port douta [/home/zcy/vga3/top_test.v:70]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 12 for port binary [/home/zcy/vga3/Top.v:531]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 12 for port binary [/home/zcy/vga3/Top.v:539]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 12 for port binary [/home/zcy/vga3/Top.v:548]
+WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 12 for port binary [/home/zcy/vga3/Top.v:557]
+WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 12 for port binary [/home/zcy/vga3/Top.v:566]
+WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 12 for port binary [/home/zcy/vga3/Top.v:575]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 12 for port binary [/home/zcy/vga3/Top.v:627]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 12 for port binary [/home/zcy/vga3/Top.v:636]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 12 for port binary [/home/zcy/vga3/Top.v:645]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 12 for port binary [/home/zcy/vga3/Top.v:654]
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2419]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clkdiv
+Compiling module xil_defaultlib.clkdiv2
+Compiling module xil_defaultlib.clk_50
+Compiling module xil_defaultlib.pwm_generator
+Compiling module xil_defaultlib.buzzer
+Compiling module unisims_ver.GND
+Compiling module xil_defaultlib.clkdiv22
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.AND4
+Compiling module unisims_ver.x_lut3_mux4
+Compiling module unisims_ver.x_lut3_mux4_reduced_0
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.AND3
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.AND2
+Compiling module unisims_ver.OR3
+Compiling module unisims_ver.OR4
+Compiling module unisims_ver.OR2
+Compiling module unisims_ver.INV
+Compiling module xil_defaultlib.MyMC14495
+Compiling module xil_defaultlib.Mux4to1
+Compiling module xil_defaultlib.Mux4to14b
+Compiling module unisims_ver.VCC
+Compiling module xil_defaultlib.DisplaySync_MUSER_disp_num
+Compiling module xil_defaultlib.disp_num
+Compiling module xil_defaultlib.Keyboard
+Compiling module blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5_output_stage(...
+Compiling module blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5_output_stage(...
+Compiling module blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5_softecc_outpu...
+Compiling module blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5(C_FAMILY="kin...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.HEXtoBCD
+Compiling module xil_defaultlib.vga_sync
+Compiling module xil_defaultlib.vga_display
+Compiling module xil_defaultlib.Top
+Compiling module xil_defaultlib.top_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_test_behav

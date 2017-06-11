@@ -1,0 +1,8 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "top_test_func_synth.v"
+verilog xil_defaultlib  "../../../../../test2.v"
+verilog xil_defaultlib  "../../../../../rqwewqe.v"
+verilog xil_defaultlib  "../../../../../top_test.v"
+
+# Do not sort compile order
+nosort

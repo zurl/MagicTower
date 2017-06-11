@@ -1,0 +1,165 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : disp_num.vf
+// /___/   /\     Timestamp : 11/24/2016 13:29:25
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family kintex7 -verilog "D:/New File Location System/Course/2AW/Digtal Logic Design/ScoreBoardW8/disp_num.vf" -w "D:/New File Location System/Course/2AW/Digtal Logic Design/ScoreBoardW8/disp_num.sch"
+//Design Name: disp_num
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module clkdiv22(input wire clk,
+	input wire rst,
+	output reg[31:0] clkdiv
+    );
+
+	//clock divider
+
+	always @(posedge clk or posedge rst) begin
+		if (rst) clkdiv <= 0;
+		else clkdiv <=	clkdiv + 1'b1;
+	end
+
+endmodule
+
+module DisplaySync_MUSER_disp_num(Hexs, 
+                                  LES, 
+                                  point, 
+                                  Scan, 
+                                  AN, 
+                                  HEX, 
+                                  LE, 
+                                  p);
+
+    input [15:0] Hexs;
+    input [3:0] LES;
+    input [3:0] point;
+    input [1:0] Scan;
+   output [3:0] AN;
+   output [3:0] HEX;
+   output LE;
+   output p;
+   
+   wire g;
+   wire v;
+   
+   Mux4to1  XLXI_1 (.I0(point[0]), 
+                   .I1(point[1]), 
+                   .I2(point[2]), 
+                   .I3(point[3]), 
+                   .s(Scan[1:0]), 
+                   .o(p));
+   Mux4to1  XLXI_2 (.I0(LES[0]), 
+                   .I1(LES[1]), 
+                   .I2(LES[2]), 
+                   .I3(LES[3]), 
+                   .s(Scan[1:0]), 
+                   .o(LE));
+   Mux4to14b  XLXI_3 (.I0(Hexs[3:0]), 
+                     .I1(Hexs[7:4]), 
+                     .I2(Hexs[11:8]), 
+                     .I3(Hexs[15:12]), 
+                     .s(Scan[1:0]), 
+                     .o(HEX[3:0]));
+   Mux4to14b  XLXI_4 (.I0({v, v, v, g}), 
+                     .I1({v, v, g, v}), 
+                     .I2({v, g, v, v}), 
+                     .I3({g, v, v, v}), 
+                     .s(Scan[1:0]), 
+                     .o(AN[3:0]));
+   VCC  XLXI_5 (.P(v));
+   GND  XLXI_6 (.G(g));
+endmodule
+`timescale 1ns / 1ps
+
+module disp_num(clk, 
+                HEXS, 
+                LES, 
+                points, 
+                rst, 
+                AN, 
+                Segment);
+
+    input clk;
+    input [15:0] HEXS;
+    input [3:0] LES;
+    input [3:0] points;
+    input rst;
+   output [3:0] AN;
+   output [7:0] Segment;
+   
+   wire [31:0] clkdiv;
+   wire [3:0] HEX;
+   wire XLXN_17;
+   wire XLXN_18;
+   
+   GND  gnd_0 (.G(clkdiv[0]));
+   GND  gnd_1 (.G(clkdiv[1]));
+   GND  gnd_2 (.G(clkdiv[2]));
+   GND  gnd_3 (.G(clkdiv[3]));
+   GND  gnd_4 (.G(clkdiv[4]));
+   GND  gnd_5 (.G(clkdiv[5]));
+   GND  gnd_6 (.G(clkdiv[6]));
+   GND  gnd_7 (.G(clkdiv[7]));
+   GND  gnd_8 (.G(clkdiv[8]));
+   GND  gnd_9 (.G(clkdiv[9]));
+   GND  gnd_10 (.G(clkdiv[10]));
+   GND  gnd_11 (.G(clkdiv[11]));
+   GND  gnd_12 (.G(clkdiv[12]));
+   GND  gnd_13 (.G(clkdiv[13]));
+   GND  gnd_14 (.G(clkdiv[14]));
+   GND  gnd_15 (.G(clkdiv[15]));
+   GND  gnd_16 (.G(clkdiv[16]));
+   GND  gnd2_0 (.G(clkdiv[19]));
+   GND  gnd2_1 (.G(clkdiv[20]));
+   GND  gnd2_2 (.G(clkdiv[21]));
+   GND  gnd2_3 (.G(clkdiv[22]));
+   GND  gnd2_4 (.G(clkdiv[23]));
+   GND  gnd2_5 (.G(clkdiv[24]));
+   GND  gnd2_6 (.G(clkdiv[25]));
+   GND  gnd2_7 (.G(clkdiv[26]));
+   GND  gnd2_8 (.G(clkdiv[27]));
+   GND  gnd2_9 (.G(clkdiv[28]));
+   GND  gnd2_10 (.G(clkdiv[29]));
+   GND  gnd2_11 (.G(clkdiv[30]));
+   GND  gnd2_12 (.G(clkdiv[31]));
+   clkdiv22  XLXI_1 (.clk(clk), 
+                  .rst(rst), 
+                  .clkdiv(clkdiv[31:0]));
+				
+						
+   MyMC14495  XLXI_2 (.D0(HEX[0]), 
+                     .D1(HEX[1]), 
+                     .D2(HEX[2]), 
+                     .D3(HEX[3]), 
+                     .LE(XLXN_18), 
+                     .point(XLXN_17), 
+                     .a(Segment[0]), 
+                     .b(Segment[1]), 
+                     .c(Segment[2]), 
+                     .d(Segment[3]), 
+                     .e(Segment[4]), 
+                     .f(Segment[5]), 
+                     .g(Segment[6]), 
+                     .p(Segment[7]));
+   DisplaySync_MUSER_disp_num  XLXI_3 (.Hexs(HEXS[15:0]), 
+                                      .LES(LES[3:0]), 
+                                      .point(points[3:0]), 
+                                      .Scan(clkdiv[18:17]), 
+                                      .AN(AN[3:0]), 
+                                      .HEX(HEX[3:0]), 
+                                      .LE(XLXN_18), 
+                                      .p(XLXN_17));
+endmodule

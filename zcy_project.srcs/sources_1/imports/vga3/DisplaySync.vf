@@ -1,0 +1,70 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : DisplaySync.vf
+// /___/   /\     Timestamp : 11/17/2016 14:40:31
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family kintex7 -verilog "D:/New File Location System/Course/2AW/Digtal Logic Design/ScoreBoard/DisplaySync.vf" -w "D:/New File Location System/Course/2AW/Digtal Logic Design/ScoreBoard/DisplaySync.sch"
+//Design Name: DisplaySync
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module DisplaySync(Hexs, 
+                   LES, 
+                   point, 
+                   Scan, 
+                   AN, 
+                   HEX, 
+                   LE, 
+                   p);
+
+    input [15:0] Hexs;
+    input [3:0] LES;
+    input [3:0] point;
+    input [1:0] Scan;
+   output [3:0] AN;
+   output [3:0] HEX;
+   output LE;
+   output p;
+   
+   wire g;
+   wire v;
+   
+   Mux4to1  XLXI_1 (.I0(point[0]), 
+                   .I1(point[1]), 
+                   .I2(point[2]), 
+                   .I3(point[3]), 
+                   .s(Scan[1:0]), 
+                   .o(p));
+   Mux4to1  XLXI_2 (.I0(LES[0]), 
+                   .I1(LES[1]), 
+                   .I2(LES[2]), 
+                   .I3(LES[3]), 
+                   .s(Scan[1:0]), 
+                   .o(LE));
+   Mux4to14b  XLXI_3 (.I0(Hexs[3:0]), 
+                     .I1(Hexs[7:4]), 
+                     .I2(Hexs[11:8]), 
+                     .I3(Hexs[15:12]), 
+                     .s(Scan[1:0]), 
+                     .o(HEX[3:0]));
+   Mux4to14b  XLXI_4 (.I0({v, v, v, g}), 
+                     .I1({v, v, g, v}), 
+                     .I2({v, g, v, v}), 
+                     .I3({g, v, v, v}), 
+                     .s(Scan[1:0]), 
+                     .o(AN[3:0]));
+   VCC  XLXI_5 (.P(v));
+   GND  XLXI_6 (.G(g));
+endmodule
